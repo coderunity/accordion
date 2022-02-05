@@ -6,8 +6,13 @@ a_header.forEach(item => {
     item.addEventListener('click', function(){
 
         a_header.forEach(item =>{
-            item.classList.remove('active');
+
+            if(item != this){
+                item.classList.remove('active');
             item.nextElementSibling.style.height = '0px'
+            }
+            
+
         });
 
         item.classList.toggle('active');
