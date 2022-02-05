@@ -17,9 +17,10 @@ html{
     margin: 100px auto;
     width: 500px;
     height: auto;
-    
-    
+    text-align: center;
 }
+
+
 
 .abu-accodion .accodion-item{
     background-color: #fff;
