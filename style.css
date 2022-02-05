@@ -14,21 +14,23 @@ html{
 }
 
 .abu-accodion{
+    margin: 100px auto;
+    width: 500px;
+    height: auto;
     
     
 }
 
 .abu-accodion .accodion-item{
     background-color: #fff;
-    width: 400px;
-    height: auto;
-    margin: 100px auto;
     border-radius: 7px;
+    padding: 10px 15px;
+    margin-top: 10px;
 }
 
 .abu-accodion .accodion-item .accodion-header{
     padding: 8px 10px;
-    font-weight: 500;
+    font-weight: 400;
     border-bottom: 1px solid #ddd;
     position: relative;
     cursor: pointer;
@@ -37,16 +39,28 @@ html{
     border-radius: 5px 5px 0 0;
     
 }
-.abu-accodion .accodion-item .accodion-header i{
+.abu-accodion .accodion-item .accodion-header::after{
+    content: '\2192';
    position: absolute;
-   top: 10px;
+   top: 5px;
    right: 15px;
-   font-size: 20px;
+   font-size: 25px;
+   transition: .3s;
+ 
+}
+.abu-accodion .accodion-item .accodion-header.active::after{
+ 
+    transform: rotate(90deg);
  
 }
 
-.accodion-contant .accodion-body{
+.abu-accodion .accodion-item .accodion-body {
+    overflow: hidden;
+    height: 0px;
+    
+}
+
+.abu-accodion .accodion-item .accodion-body .accodion-contant{
     padding: 8px 10px;
     font-weight: 400;
-    
 }
